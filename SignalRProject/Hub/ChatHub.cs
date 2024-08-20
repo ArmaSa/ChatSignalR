@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SignalRProject.Hub
 {
-
+    //Strongly type 
     public interface IChatHub
     {
         Task ReceiveNotification(string name, string content);
