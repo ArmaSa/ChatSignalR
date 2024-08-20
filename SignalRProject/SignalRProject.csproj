@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
-    <ProjectReference Include="..\Extention\Extention\Extention.csproj" />
+    <ProjectReference Include="..\Extention\Extention.csproj" />
   </ItemGroup>
 
 </Project>
