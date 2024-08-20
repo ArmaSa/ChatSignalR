@@ -1,0 +1,80 @@
+﻿@page
+<div class="container" dir="rtl">
+    <div class="row">
+        <div class="col-md-8">
+        <div class="input-group pb-md-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">نام کاربری</span>
+            </div>
+            <input type="text" id="userInput" class="form-control" />
+                <div class="input-group-append">
+                    <button class="btn btn-success" id="connect" disabled type="button">اتصال</button>
+                    <button class="btn btn-warning" id="disconnect" style="display:none" type="button">قطع</button>
+                </div>
+        </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="input-group pb-md-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">کد کاربری من</span>
+                </div>
+                <input type="text" class="form-control" id="myId" readonly />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="input-group pb-md-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">کد کاربری ارتباطی</span>
+                </div>
+                <input type="text" class="form-control" id="connectionId"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+        <div class="form-group">
+
+            <label>پیام ارسالی</label>
+                <textarea class="form-control msgarea" id="messageInput" rows="3"></textarea>
+        </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8 pt-md-1">
+            <input type="button" id="sendButton" class="btn btn-primary" value="ارسال پیام" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 msglist" >
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<style>
+
+    .msgarea
+    {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        border-radius: 10px;
+    }
+</style>
