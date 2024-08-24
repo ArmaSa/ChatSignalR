@@ -6,7 +6,8 @@ using Microsoft.EntityFrameworkCore;
 namespace SignalRProject.Hub
 {
     //add comment 1
-    //add cooment 
+    //add comment 2
+    //add comment 3
     public interface IChatHub
     {
         Task ReceiveNotification(string name, string content);
