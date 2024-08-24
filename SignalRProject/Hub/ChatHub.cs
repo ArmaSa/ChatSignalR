@@ -4,8 +4,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace SignalRProject.Hub
-{
-    //add comment 1
+{    //add comment 1
     //add comment 2
     //add comment 3
     public interface IChatHub
